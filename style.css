@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: "Ubuntu";
+    background-image:linear-gradient(0deg,#fff 20%,#b7151d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.musicContainer{
+    height: 100px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 111;
+    background: #333;
+    color: #fff;
+    box-shadow: 0 20px 20px 0 #888
+}
+.imgContainer{
+    position: relative;
+    width: 80px;
+}
+
+.imgContainer img{
+    width: inherit;
+    height: 80px;
+    object-fit: cover;
+    position: relative;
+    margin: 10px
+}
+
+.musicContainer.play .imgContainer img {
+    animation-play-state: running
+}
+
+
+
+.navigation{
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.actionBtn{
+    background: transparent;
+    border:0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.actionBtn:hover{
+    color: #b7151d
+}
+.actionBtn:focus{
+    outline: none
+}
+.musicInfo{
+
+    width: 50%;
+
+}
+
+.musicInfo h4{
+    margin: 0
+}
+
+
+.progressContainer{
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%
+}
+.progress{
+    background: #b7151d;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+    
+}
+
+/************
+.progressDot{
+    content: '';
+    background: red;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 58%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    border: 0;
+}
+****************/
